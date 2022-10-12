@@ -1,0 +1,29 @@
+
+<section class="container">
+    <div class="card my-5" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img [src]="productList?.imageURL" class="img-fluid " style="width: 100%; height:225px; " alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h3 class="card-title">{{productList?.name}}</h3>
+              <p class="card-text fw-lighter">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"> Price : {{productList?.price}}</p>
+              <p class="card-text"> Quantity : {{productList?.quantity}}</p>
+              <!-- <a class="btn btn-primary" [routerLink]="['/Products']" role="button"> Go Back</a> -->
+         
+              <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+              <label class="btn btn-outline-primary" for="btncheck1" (click)="prevPord()"> Previous</label>
+            
+              <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+              <label class="btn btn-outline-primary" for="btncheck2"  [routerLink]="['/Products']">Back</label>
+            
+              <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+              <label class="btn btn-outline-primary" for="btncheck3" (click)="nextPord()">Next</label>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+

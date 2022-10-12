@@ -1,0 +1,20 @@
+<section class="container">
+    <h3 class="my-3">Category List</h3>
+    <select class="form-select form-select-lg "[(ngModel)]="selectCategory" aria-label=".form-select-lg example">
+       <!-- / <option  [value]=0  selected> {{}}</option> -->
+
+        <option *ngFor="let cat of category" [value]="cat.id">{{cat.name}}</option>
+      </select>
+</section>
+<h1>{{selectCategory}}</h1>
+<hr>
+<section>
+    <app-home [listCategory]="selectCategory"></app-home>
+   
+    <!-- <app-home [listCategory]="selectCategory" (cartItem)=" addToCart($event)"></app-home> -->
+</section>
+
+<hr>
+<!-- <app-price [totalItem]="cart.length" [totalPrice]="totalPrice"></app-price> -->
+<app-price ></app-price>
+<!-- <h2> TOTAL PRICE : {{totalPrice}}</h2> -->

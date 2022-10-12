@@ -1,0 +1,108 @@
+{
+  "users": [
+    {
+      "email": "email.com",
+      "password": "1234567890"
+    }
+  ],
+  "category": [
+    {
+      "id": 0,
+      "name": "all"
+    },
+    {
+      "id": 1,
+      "name": "Laptops"
+    },
+    {
+      "id": 2,
+      "name": "Tablets"
+    },
+    {
+      "id": 3,
+      "name": "Mobile"
+    }
+  ],
+  "product": [
+    {
+      "id": 1,
+      "name": "Retool",
+      "price": 304,
+      "imageURL": "https://logo.clearbit.com/craigslist.org",
+      "quantity": 9,
+      "categoryID": 1
+    },
+    {
+      "id": 2,
+      "name": "Wells Fargo",
+      "price": 296,
+      "imageURL": "https://logo.clearbit.com/phoca.cz",
+      "quantity": 4,
+      "categoryID": 2
+    },
+    {
+      "id": 3,
+      "name": "Palentir Technologies",
+      "price": 440,
+      "imageURL": "https://logo.clearbit.com/alibaba.com",
+      "quantity": 5,
+      "categoryID": 3
+    },
+    {
+      "id": 4,
+      "name": "Bank of America",
+      "price": 250,
+      "imageURL": "https://logo.clearbit.com/scribd.com",
+      "quantity": 3,
+      "categoryID": 3
+    },
+    {
+      "id": 5,
+      "name": "Twitter",
+      "price": 379,
+      "imageURL": "https://logo.clearbit.com/gravatar.com",
+      "quantity": 4,
+      "categoryID": 2
+    },
+    {
+      "id": 6,
+      "name": "Segment",
+      "price": 399,
+      "imageURL": "https://logo.clearbit.com/ocn.ne.jp",
+      "quantity": 5,
+      "categoryID": 1
+    },
+    {
+      "id": 7
+    },
+    {
+      "id": 8,
+      "name": "Progressive",
+      "price": 485,
+      "imageURL": "https://logo.clearbit.com/posterous.com",
+      "quantity": 3,
+      "categoryID": 3
+    },
+    {
+      "name": "phone",
+      "price": 1234,
+      "quantity": 112,
+      "categoryID": "3",
+      "id": 9
+    },
+    {
+      "name": "newOne",
+      "price": 2233,
+      "quantity": 2,
+      "categoryID": "2",
+      "id": 10
+    },
+    {
+      "name": "awddwa",
+      "price": null,
+      "quantity": null,
+      "categoryID": "1",
+      "id": 11
+    }
+  ]
+}

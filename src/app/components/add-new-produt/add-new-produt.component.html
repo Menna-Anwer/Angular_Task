@@ -1,0 +1,38 @@
+<section class="container">
+    <form #myForm="ngForm" class="my-5 w-75 m-auto" (ngSubmit)="addProd()">
+        <div class="mb-3">
+          <label class="form-label">Enter name of Product:</label>
+          <input type="text" class="form-control" name="name"
+          [(ngModel)]="prod.name" required pattern="[A-Za-z]{3,}" #pName="ngModel" >
+    
+        <div  [hidden]="pName.valid || pName.untouched">
+            <p class="text-danger" *ngIf="pName.errors?.['required']" > Name is REQUIRED </p>
+        </div>
+         
+        <!-- /////////////////Price///////////////  -->
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Price:</label>
+            <input type="number" class="form-control" [(ngModel)]="prod.price"  name="pPrice">
+        </div>
+        <!-- /////////////////////Quantity////////////////////////// -->
+        <div class="mb-3">
+            <label class="form-label">Quantity</label>
+            <input type="number" class="form-control"  [(ngModel)]="prod.quantity" name="pQuantity">
+        </div>
+        <div>
+            <label for=""> Category: </label>
+            <select class="form-select mb-3"  [(ngModel)]="prod.categoryID" name="pCat">
+                <option *ngFor="let cat of  category" [value]="cat.id"> {{cat.name}} </option>
+            </select>
+        </div>
+    
+        <div class="mb-3">
+            <label class="form-label">Image </label>
+            <input type="file" class="form-control" name="pImg" [(ngModel)]="prod.imageURL">
+        </div>
+    
+        
+        <button [disabled]="myForm.invalid" type="submit" class="btn btn-primary">ADD NEW</button>
+      </form>
+</section>
